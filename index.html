@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-size=1.0"/>
+    <title>Know-Your-Force</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="page-wrapper">
+    <header id="header">
+      <div class="logo">
+      <img id="header-img" src="https://i.pinimg.com/736x/66/15/f6/6615f6794bc97e3d75f197b98762ddaa.jpg" width="300" alt="CSBS Software">
+      </div>
+      <nav id="nav-bar">
+          <ul class="nav-ul">
+            <li><a class="nav-link" href="#aboutus">About Us</a></li>
+            <li><a class="nav-link" href="#team">Meet Our Team</a></li>
+            <li><a class="nav-link" href="#project">Our Projects</a></li>
+          </ul>
+        </nav>
+    </header>
+    </div>
+
+    <div class="reg">
+      <section>
+        <div>
+        <h3 id="reg-header">Register Here for All Updates!!</h3>
+    <form id="form" method="dialog" oninput="emailOutput.value = email.value" onsubmit="document.getElementById('popup').showModal(); return false;" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" id="email" name="email" placeholder="Enter Your Email ID" required />
+    <input type="submit" id="submit" value="Register!">
+</form>
+
+<dialog id="popup">
+    <p>Thank you for registering!</p>
+    <p>Your Email: <output name="emailOutput" id="emailOutput"></output></p>
+    <button onclick="document.getElementById('popup').close()">Close</button>
+</dialog>
+        </form>
+      </section>
+    </div>
+
+    <div id="aboutus">
+      <section id="aboutus">
+      <H2>About us</h2>
+      <img src="https://www.teamacademy.co.uk/wp-content/uploads/blog-corp-team-1200px-630px-72dpi.jpg" width="200px">
+      <p>At CSBS Software Solutions, we specialize in delivering cutting-edge cross-platform and multi-platform development solutions, ensuring seamless integration across diverse devices and operating systems. Our expertise spans from native and hybrid app development to enterprise software solutions, allowing businesses to optimize their digital presence without platform constraints.
+
+Beyond software development, we excel in software maintenance and lifecycle management, ensuring your applications remain robust, secure, and up-to-date with evolving technological trends. Our dedicated support team ensures minimal downtime and optimal performance, keeping your business operations smooth and efficient.</p>
+   </section>
+    </div>
+    <div>
+      <section id="team">
+        <h3>Meet Our Team<h3>
+        <iframe width="auto" height="auto" id="video" src="https://www.youtube.com/embed/TUtkSKI8_Mg?si=pYiSmQESLnPvEJyy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+    </div>
+    <div class="project">
+      <section id="project">
+        <h3>Our Projects</h3>
+        <ul class="projectlist">
+          <li>Automated Timetable Scheduler</li>
+          <li>Online rate Comparision App</li>
+          <li>RentalPG Automated App</li>
+          <li>Car Consultancy App</li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer">
+    <footer>
+      <p>Developed By CSBS Software Solution Pvt Ltd.<p>
+    </footer>
+    </div>
+  </body>
+
+  <style>
+    #header{
+  display: flex;
+}
+.page-wrapper{
+  align-items: center;
+}
+#nav-bar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #nav-bar li {
+            margin-left: 20px; /* Space between menu items */
+        }
+.nav-ul{
+  display: flex;
+}
+#nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background */
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+body {
+    height: 100vh; /* Ensures full-screen height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background: linear-gradient(to bottom, white 40%, #6187c9);
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps it fixed while scrolling */
+}
+
+#header-img{
+  padding-top:50px;
+  display: block;
+  width: 400px;
+  height: 200px;
+}
+.logo{
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+h3{
+  text-align: center;
+}
+
+
+input{
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
+#aboutus{
+  position: block;
+  align-items: center;
+  margin: 10px;
+  justify-items: center;
+}
+
+.projectlist{
+  color: white; 
+  justify-content: center;
+  list-style: none;
+}
+
+footer{
+  color: white;
+  background-color: black;
+  width: auto;
+  height: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+}
+
+  </style>
+</html> 
+
+
+
